@@ -10,7 +10,7 @@ spec:
   ports:
   - protocol: TCP
     port: 8080
-    nodePort: 8081
+    nodePort: 30005
 
 ---
 
@@ -41,7 +41,7 @@ spec:
           httpGet:
             path: /
             port: 8080
-          initialDelaySeconds: 15
+          initialDelaySeconds: 30
           timeoutSeconds: 1
           periodSeconds: 10
         resources:
